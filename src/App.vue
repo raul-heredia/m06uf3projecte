@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComponent title="Welcome to Sudoku Games"/>
+    <HeaderComponent title="Benvingut a VueDoku"/>
   </div>
 </template>
 
@@ -22,6 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>

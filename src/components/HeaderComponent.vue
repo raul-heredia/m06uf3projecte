@@ -1,28 +1,166 @@
 <template>
-  <div class="relative h-64 m-8 overflow-hidden bg-indigo-500">
-  <div class="absolute z-30 flex w-full h-full">
-    <div class="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
-      <h2 class="text-5xl">{{ title }}</h2><span></span>
-    </div>
-    <div class="absolute top-0 right-0 flex w-full h-full">
-      <div class="w-1/3 h-full bg-indigo-500"></div>
-      <div class="relative w-1/3"><svg fill="currentColor" viewBox="0 0 100 100" class="absolute inset-y-0 z-20 h-full text-indigo-500">
-          <polygon id="diagonal" points="0,0 100,0 50,100 0,100"></polygon>
-        </svg><svg fill="currentColor" viewBox="0 0 100 100" class="absolute inset-y-0 z-10 h-full ml-6 text-white opacity-50">
-          <polygon points="0,0 100,0 50,100 0,100"></polygon>
-        </svg></div>
+  <!-- Background image -->
+  <div
+    class="relative overflow-hidden h-screen bg-no-repeat bg-cover"
+    style="background-position: 50%"
+    :style="{ backgroundImage: 'url(' + require('@/assets/sudoku.jpg') + ')' }"
+  >
+    <div
+      class="
+        absolute
+        top-0
+        right-0
+        bottom-0
+        left-0
+        w-full
+        h-full
+        overflow-hidden
+        bg-fixed
+      "
+      style="background-color: rgba(0, 0, 0, 0.75)"
+    >
+      <div class="flex justify-center items-center h-full">
+        <div class="text-center text-white px-6 md:px-12">
+          <h1
+            class="
+              text-5xl
+              font-bold
+              mt-0
+              mb-6
+              animate__animated animate__bounceInDown
+            "
+          >
+            {{ title }}
+          </h1>
+          <h3 class="text-3xl font-bold mb-8">Marc Carbonell i Raúl Heredia</h3>
+          <div class="flex justify-center">
+            <input
+              type="text"
+              class="
+                form-control
+                block
+                w-50%
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700
+                focus:bg-white
+                focus:border-green-600
+                focus:outline-none
+              "
+              id="exampleText0"
+              placeholder="Nom Jugador"
+            />
+          </div>
+          <br />
+          <div class="flex">
+            <div class="flex-auto">
+              <button
+                type="button"
+                class="
+                  inline-block
+                  px-6
+                  py-2
+                  border-2 border-green-500
+                  text-white-500
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  hover:bg-black hover:bg-opacity-5
+                  focus:outline-none focus:ring-0
+                  transition
+                  duration-150
+                  ease-in-out
+                  w-24
+                  h-10
+                  animate__animated animate__fadeInDown
+                "
+              >
+                Fàcil
+              </button>
+            </div>
+            <div class="flex-auto">
+              <button
+                type="button"
+                class="
+                  inline-block
+                  px-6
+                  py-2.5
+                  border-2 border-yellow-600
+                  text-white
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  hover:bg-black hover:bg-opacity-5
+                  focus:outline-none focus:ring-0
+                  transition
+                  duration-150
+                  ease-in-out
+                  w-24
+                  h-10
+                  animate__animated animate__fadeInDown
+                "
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
+                Normal
+              </button>
+            </div>
+            <div class="flex-auto">
+              <button
+                type="button"
+                class="
+                  inline-block
+                  px-6
+                  py-2.5
+                  border-2 border-red-600
+                  text-white
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  hover:bg-black hover:bg-opacity-5
+                  focus:outline-none focus:ring-0
+                  transition
+                  duration-150
+                  ease-in-out
+                  w-24
+                  h-10
+                  animate__animated animate__fadeInDown
+                "
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
+                Difícil
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="absolute top-0 right-0 block w-9/12 h-full"><img alt="Snowy mountain lake" class="object-cover min-w-full h-full" src="https://images.unsplash.com/photo-1607025952930-da2ac6748e7a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"></div>
-</div>
+  <!-- Background image -->
 </template>
 
 <script>
 export default {
-  name: 'SudokuGame',
+  name: "SudokuGame",
   props: {
-    title: String
-  }
-}
+    title: String,
+  },
+};
 </script>
 
