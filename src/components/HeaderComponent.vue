@@ -119,6 +119,8 @@
               </button>
             </div>
             <div class="flex-auto">
+             <a href="#/contacte" 
+               v-on:click="this.$parent.navegar">
               <button
                 type="button"
                 class="
@@ -143,9 +145,12 @@
                 "
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
+                value="#/contacte"
+                v-on:click="this.$parent.navegar"
               >
                 Difícil
               </button>
+             </a>
             </div>
           </div>
         </div>

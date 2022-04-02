@@ -1,16 +1,48 @@
 <template>
   <div id="app">
-    <HeaderComponent title="Benvingut a VueDoku"/>
+    <component :is="vistaActual" />
+   
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
+import TestComponent from './components/TestComponent.vue'
+import NoTrobat from './components/NoTrobat.vue'
+
+
+const rutes = {
+  '#/': HeaderComponent,
+  '#/contacte': TestComponent
+};
+
+
 export default {
   name: 'App',
   components: {
     HeaderComponent
+  },
+  data: function() {
+    return {
+      rutaActual: window.location.hash,
+      rutes: rutes
+    }
+  },
+  methods: {
+    navegar: function($event) {
+      this.rutaActual = $event.target.value;
+    }
+  },
+  computed: {
+    vistaActual: function() {
+      return this.rutes[this.rutaActual] || NoTrobat;
+    }
+  },
+  //Esta funcion hace que cuando se canvia el #/ de la ruta, se ponga la vista que queremos
+   mounted() {
+    window.addEventListener('hashchange', () => {
+		this.rutaActual = window.location.hash
+		})
   }
 }
 </script>
