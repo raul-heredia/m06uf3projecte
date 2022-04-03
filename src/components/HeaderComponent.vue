@@ -63,6 +63,7 @@
           <br />
           <div class="flex">
             <div class="flex-auto">
+             <a href="#/facil" v-on:click="this.$parent.navegar">
               <button
                 type="button"
                 class="
@@ -88,6 +89,7 @@
               >
                 Fàcil
               </button>
+             </a>
             </div>
             <div class="flex-auto">
               <button
@@ -164,8 +166,8 @@
 export default {
   name: "SudokuGame",
   props: {
-    title: String,
-  },
+    title: String
+  }
 };
 </script>
 

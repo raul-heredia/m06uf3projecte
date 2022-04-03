@@ -1,24 +1,23 @@
 <template>
   <div id="app">
     <component :is="vistaActual" />
-   
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
-import TestComponent from './components/TestComponent.vue'
-import NoTrobat from './components/NoTrobat.vue'
-
+import HeaderComponent from "./components/HeaderComponent.vue";
+import TestComponent from "./components/TestComponent.vue";
+import NoTrobat from "./components/NoTrobat.vue";
+import NFacilComponent from "./components/NFacilComponent.vue";
 
 const rutes = {
-  '#/': HeaderComponent,
-  '#/contacte': TestComponent
+  "#/": HeaderComponent,
+  "#/contacte": TestComponent,
+  "#/facil": NFacilComponent
 };
 
-
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderComponent
   },
@@ -26,7 +25,7 @@ export default {
     return {
       rutaActual: window.location.hash,
       rutes: rutes
-    }
+    };
   },
   methods: {
     navegar: function($event) {
@@ -39,12 +38,12 @@ export default {
     }
   },
   //Esta funcion hace que cuando se canvia el #/ de la ruta, se ponga la vista que queremos
-   mounted() {
-    window.addEventListener('hashchange', () => {
-		this.rutaActual = window.location.hash
-		})
+  mounted() {
+    window.addEventListener("hashchange", () => {
+      this.rutaActual = window.location.hash;
+    });
   }
-}
+};
 </script>
 
 <style>
