@@ -6,7 +6,7 @@ export default {
   },
   data: () => {
     return {
-      matriuInicial: [
+      aSolucion: [
         [
           { id: "a1", num: 5 },
           { id: "a2", num: 3 },
@@ -107,44 +107,148 @@ export default {
           { id: "i9", num: 9 }
         ]
       ],
-      matriu2: []
+      aInicial: [
+        [
+          { id: "a1", num: 5 },
+          { id: "a2", num: 3 },
+          { id: "a3", num: 0 },
+          { id: "a4", num: 0 },
+          { id: "a5", num: 7 },
+          { id: "a6", num: 0 },
+          { id: "a7", num: 0 },
+          { id: "a8", num: 0 },
+          { id: "a9", num: 0 }
+        ],
+        [
+          { id: "b1", num: 6 },
+          { id: "b2", num: 0 },
+          { id: "b3", num: 0 },
+          { id: "b4", num: 1 },
+          { id: "b5", num: 9 },
+          { id: "b6", num: 5 },
+          { id: "b7", num: 0 },
+          { id: "b8", num: 0 },
+          { id: "b9", num: 0 }
+        ],
+        [
+          { id: "c1", num: 0 },
+          { id: "c2", num: 9 },
+          { id: "c3", num: 8 },
+          { id: "c4", num: 0 },
+          { id: "c5", num: 0 },
+          { id: "c6", num: 0 },
+          { id: "c7", num: 0 },
+          { id: "c8", num: 6 },
+          { id: "c9", num: 0 }
+        ],
+        [
+          { id: "d1", num: 8 },
+          { id: "d2", num: 0 },
+          { id: "d3", num: 0 },
+          { id: "d4", num: 0 },
+          { id: "d5", num: 6 },
+          { id: "d6", num: 0 },
+          { id: "d7", num: 0 },
+          { id: "d8", num: 0 },
+          { id: "d9", num: 3 }
+        ],
+        [
+          { id: "e1", num: 4 },
+          { id: "e2", num: 0 },
+          { id: "e3", num: 0 },
+          { id: "e4", num: 8 },
+          { id: "e5", num: 0 },
+          { id: "e6", num: 3 },
+          { id: "e7", num: 0 },
+          { id: "e8", num: 0 },
+          { id: "e9", num: 1 }
+        ],
+        [
+          { id: "f1", num: 7 },
+          { id: "f2", num: 0 },
+          { id: "f3", num: 0 },
+          { id: "f4", num: 0 },
+          { id: "f5", num: 2 },
+          { id: "f6", num: 0 },
+          { id: "f7", num: 0 },
+          { id: "f8", num: 0 },
+          { id: "f9", num: 6 }
+        ],
+        [
+          { id: "g1", num: 0 },
+          { id: "g2", num: 6 },
+          { id: "g3", num: 0 },
+          { id: "g4", num: 0 },
+          { id: "g5", num: 0 },
+          { id: "g6", num: 0 },
+          { id: "g7", num: 2 },
+          { id: "g8", num: 8 },
+          { id: "g9", num: 0 }
+        ],
+        [
+          { id: "h1", num: 0 },
+          { id: "h2", num: 0 },
+          { id: "h3", num: 0 },
+          { id: "h4", num: 4 },
+          { id: "h5", num: 1 },
+          { id: "h6", num: 9 },
+          { id: "h7", num: 0 },
+          { id: "h8", num: 0 },
+          { id: "h9", num: 5 }
+        ],
+        [
+          { id: "i1", num: 0 },
+          { id: "i2", num: 0 },
+          { id: "i3", num: 0 },
+          { id: "i4", num: 0 },
+          { id: "i5", num: 8 },
+          { id: "i6", num: 0 },
+          { id: "i7", num: 0 },
+          { id: "i8", num: 7 },
+          { id: "i9", num: 9 }
+        ]
+      ]
     };
   },
   methods: {
     funcioMatriu() {
-      this.matriu2 = this.matriuInicial;
-      for (var i = 0; i < this.matriu2.length; ++i) {
+      this.aInicial.forEach(linea => {
+        linea.forEach(casella => {
+          if (casella.num == 0) casella.num = "";
+        });
+      });
+      /* for (var i = 0; i < this.aInicial.length; ++i) {
         for (var k = 0; k < 2; ++k) {
-          var indexColumn = Math.floor(Math.random() * this.matriu2.length);
-          this.matriu2[i][indexColumn].num = "";
+          var indexColumn = Math.floor(Math.random() * this.aInicial.length);
+          this.aInicial[i][indexColumn].num = "";
         }
-      }
+      }*/
     },
     comprovarMatriu() {
-      var copiamatriu2 = [];
-      var copiamatriuInicial = [];
+      var copiaaInicial = [];
+      var copiaaSolucion = [];
       var contEncerts = 0,
         contErros = 0;
       //COPIA ELS NOMBRES DE LA MATRIU DEL USUARI
-      for (var i = 0; i < this.matriu2.length; ++i) {
-        if (!copiamatriu2[i]) copiamatriu2[i] = [];
+      for (var i = 0; i < this.aInicial.length; ++i) {
+        if (!copiaaInicial[i]) copiaaInicial[i] = [];
 
-        for (var k = 0; k < this.matriu2[i].length; ++k) {
-          copiamatriu2[i][k] = this.matriu2[i][k].num;
+        for (var k = 0; k < this.aInicial[i].length; ++k) {
+          copiaaInicial[i][k] = this.aInicial[i][k].num;
         }
       }
       //COPIA ELS NOMBRES DE LA MATRIU INICIAL
-      for (var j = 0; j < this.matriuInicial.length; ++j) {
-        if (!copiamatriuInicial[j]) copiamatriuInicial[j] = [];
+      for (var j = 0; j < this.aSolucion.length; ++j) {
+        if (!copiaaSolucion[j]) copiaaSolucion[j] = [];
 
-        for (var h = 0; h < this.matriuInicial[j].length; ++h) {
-          copiamatriuInicial[j][h] = this.matriuInicial[j][h].num;
+        for (var h = 0; h < this.aSolucion[j].length; ++h) {
+          copiaaSolucion[j][h] = this.aSolucion[j][h].num;
         }
       }
       //COMPROVAR LES MATRIUS
-      for (i = 0; i < copiamatriuInicial.length; i++) {
-        for (j = 0; j < copiamatriuInicial[i].length; j++) {
-          if (copiamatriuInicial[i][j] == copiamatriu2[i][j]) {
+      for (i = 0; i < copiaaSolucion.length; i++) {
+        for (j = 0; j < copiaaSolucion[i].length; j++) {
+          if (copiaaSolucion[i][j] == copiaaInicial[i][j]) {
             contEncerts++;
           } else {
             contErros++;
@@ -181,12 +285,12 @@ export default {
     >
       <br>
       <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">Sudokus</h1>
-      <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">Nivell Fàcil</h2>
+      <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">Nivell Infernal</h2>
       <br>
       <br>
       <div class="panel">
         <div
-          v-for="row in matriu2"
+          v-for="row in aInicial"
           :key="row.id"
         >
           <div
@@ -199,9 +303,9 @@ export default {
               min="0"
               max="9"
               class=" border border-solid border-gray-300, cell"
-              v-bind:key="cell.num"
+              v-bind:key="cell.id"
+              :disabled="cell.num ? '' : disabled"
               v-model="cell.num"
-              readonly
             />
       </div>
       </div>
@@ -247,5 +351,16 @@ export default {
   text-align: center;
   height: 40px;
   width: 40px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 </style>
