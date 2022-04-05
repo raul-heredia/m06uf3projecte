@@ -21,15 +21,13 @@
     >
       <div class="flex justify-center items-center h-full">
         <div class="text-center text-white px-6 md:px-12">
-          <h1
-            class="
+          <h1 class="
               text-5xl
               font-bold
               mt-0
               mb-6
               animate__animated animate__bounceInDown
-            "
-          >
+            ">
             {{ title }}
           </h1>
           <h3 class="text-3xl font-bold mb-8">Marc Carbonell i Raúl Heredia</h3>
@@ -63,10 +61,14 @@
           <br />
           <div class="flex">
             <div class="flex-auto">
-             <a href="#/facil" v-on:click="this.$parent.navegar">
-              <button
-                type="button"
-                class="
+              <a
+                href="#/facil"
+                v-on:click="this.$parent.navegar"
+              >
+
+                <button
+                  type="button"
+                  class="
                   inline-block
                   px-6
                   py-2
@@ -86,10 +88,10 @@
                   h-10
                   animate__animated animate__fadeInDown
                 "
-              >
-                Fàcil
-              </button>
-             </a>
+                >
+                  Fàcil
+                  </button>
+                  </a>
             </div>
             <div class="flex-auto">
               <button
@@ -118,14 +120,16 @@
                 data-mdb-ripple-color="light"
               >
                 Normal
-              </button>
+                </button>
             </div>
             <div class="flex-auto">
-             <a href="#/contacte" 
-               v-on:click="this.$parent.navegar">
-              <button
-                type="button"
-                class="
+              <a
+                href="#/contacte"
+                v-on:click="this.$parent.navegar"
+              >
+                <button
+                  type="button"
+                  class="
                   inline-block
                   px-6
                   py-2.5
@@ -145,21 +149,21 @@
                   h-10
                   animate__animated animate__fadeInDown
                 "
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                value="#/contacte"
-                v-on:click="this.$parent.navegar"
-              >
-                Difícil
-              </button>
-             </a>
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                  value="#/contacte"
+                  v-on:click="this.$parent.navegar"
+                >
+                  Difícil
+                  </button>
+                  </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Background image -->
+      </div>
+      </div>
+      <!-- Background image -->
 </template>
 
 <script>

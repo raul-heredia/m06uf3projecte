@@ -9,11 +9,13 @@ import HeaderComponent from "./components/HeaderComponent.vue";
 import TestComponent from "./components/TestComponent.vue";
 import NoTrobat from "./components/NoTrobat.vue";
 import NFacilComponent from "./components/NFacilComponent.vue";
+import ResultsComponent from "./components/ResultsComponent.vue";
 
 const rutes = {
   "#/": HeaderComponent,
   "#/contacte": TestComponent,
-  "#/facil": NFacilComponent
+  "#/facil": NFacilComponent,
+  "#/results": ResultsComponent
 };
 
 export default {
