@@ -3,10 +3,10 @@ import ResultsComponent from "./ResultsComponent.vue";
 export default {
   name: "NivelFacil",
   props: {
-    title: String
+    title: String,
   },
   components: {
-    ResultsComponent
+    ResultsComponent,
   },
   data: () => {
     return {
@@ -20,7 +20,7 @@ export default {
           { id: "a6", num: 8 },
           { id: "a7", num: 9 },
           { id: "a8", num: 1 },
-          { id: "a9", num: 2 }
+          { id: "a9", num: 2 },
         ],
         [
           { id: "b1", num: 6 },
@@ -31,7 +31,7 @@ export default {
           { id: "b6", num: 5 },
           { id: "b7", num: 3 },
           { id: "b8", num: 4 },
-          { id: "b9", num: 8 }
+          { id: "b9", num: 8 },
         ],
         [
           { id: "c1", num: 1 },
@@ -42,7 +42,7 @@ export default {
           { id: "c6", num: 2 },
           { id: "c7", num: 5 },
           { id: "c8", num: 6 },
-          { id: "c9", num: 7 }
+          { id: "c9", num: 7 },
         ],
         [
           { id: "d1", num: 8 },
@@ -53,7 +53,7 @@ export default {
           { id: "d6", num: 1 },
           { id: "d7", num: 4 },
           { id: "d8", num: 2 },
-          { id: "d9", num: 3 }
+          { id: "d9", num: 3 },
         ],
         [
           { id: "e1", num: 4 },
@@ -64,7 +64,7 @@ export default {
           { id: "e6", num: 3 },
           { id: "e7", num: 7 },
           { id: "e8", num: 9 },
-          { id: "e9", num: 1 }
+          { id: "e9", num: 1 },
         ],
         [
           { id: "f1", num: 7 },
@@ -75,7 +75,7 @@ export default {
           { id: "f6", num: 4 },
           { id: "f7", num: 8 },
           { id: "f8", num: 5 },
-          { id: "f9", num: 6 }
+          { id: "f9", num: 6 },
         ],
         [
           { id: "g1", num: 9 },
@@ -86,7 +86,7 @@ export default {
           { id: "g6", num: 7 },
           { id: "g7", num: 2 },
           { id: "g8", num: 8 },
-          { id: "g9", num: 4 }
+          { id: "g9", num: 4 },
         ],
         [
           { id: "h1", num: 2 },
@@ -97,7 +97,7 @@ export default {
           { id: "h6", num: 9 },
           { id: "h7", num: 6 },
           { id: "h8", num: 3 },
-          { id: "h9", num: 5 }
+          { id: "h9", num: 5 },
         ],
         [
           { id: "i1", num: 3 },
@@ -108,8 +108,8 @@ export default {
           { id: "i6", num: 6 },
           { id: "i7", num: 1 },
           { id: "i8", num: 7 },
-          { id: "i9", num: 9 }
-        ]
+          { id: "i9", num: 9 },
+        ],
       ],
       aInicial: [
         [
@@ -121,7 +121,7 @@ export default {
           { id: "a6", num: 0, editable: true },
           { id: "a7", num: 0, editable: true },
           { id: "a8", num: 0, editable: true },
-          { id: "a9", num: 0, editable: true }
+          { id: "a9", num: 0, editable: true },
         ],
         [
           { id: "b1", num: 6, editable: false },
@@ -132,7 +132,7 @@ export default {
           { id: "b6", num: 5, editable: false },
           { id: "b7", num: 0, editable: true },
           { id: "b8", num: 0, editable: true },
-          { id: "b9", num: 0, editable: true }
+          { id: "b9", num: 0, editable: true },
         ],
         [
           { id: "c1", num: 0, editable: true },
@@ -143,7 +143,7 @@ export default {
           { id: "c6", num: 0, editable: true },
           { id: "c7", num: 0, editable: true },
           { id: "c8", num: 6, editable: false },
-          { id: "c9", num: 0, editable: true }
+          { id: "c9", num: 0, editable: true },
         ],
         [
           { id: "d1", num: 8, editable: false },
@@ -154,7 +154,7 @@ export default {
           { id: "d6", num: 0, editable: true },
           { id: "d7", num: 0, editable: true },
           { id: "d8", num: 0, editable: true },
-          { id: "d9", num: 3, editable: false }
+          { id: "d9", num: 3, editable: false },
         ],
         [
           { id: "e1", num: 4, editable: false },
@@ -165,7 +165,7 @@ export default {
           { id: "e6", num: 3, editable: false },
           { id: "e7", num: 0, editable: true },
           { id: "e8", num: 0, editable: true },
-          { id: "e9", num: 1, editable: false }
+          { id: "e9", num: 1, editable: false },
         ],
         [
           { id: "f1", num: 7, editable: false },
@@ -176,7 +176,7 @@ export default {
           { id: "f6", num: 0, editable: true },
           { id: "f7", num: 0, editable: true },
           { id: "f8", num: 0, editable: true },
-          { id: "f9", num: 6, editable: false }
+          { id: "f9", num: 6, editable: false },
         ],
         [
           { id: "g1", num: 0, editable: true },
@@ -187,7 +187,7 @@ export default {
           { id: "g6", num: 0, editable: true },
           { id: "g7", num: 2, editable: false },
           { id: "g8", num: 8, editable: false },
-          { id: "g9", num: 0, editable: true }
+          { id: "g9", num: 0, editable: true },
         ],
         [
           { id: "h1", num: 0, editable: true },
@@ -198,7 +198,7 @@ export default {
           { id: "h6", num: 9, editable: false },
           { id: "h7", num: 0, editable: true },
           { id: "h8", num: 0, editable: true },
-          { id: "h9", num: 5, editable: false }
+          { id: "h9", num: 5, editable: false },
         ],
         [
           { id: "i1", num: 0, editable: true },
@@ -209,8 +209,8 @@ export default {
           { id: "i6", num: 0, editable: true },
           { id: "i7", num: 0, editable: true },
           { id: "i8", num: 7, editable: false },
-          { id: "i9", num: 9, editable: false }
-        ]
+          { id: "i9", num: 9, editable: false },
+        ],
       ],
       modalOpen: false,
       bCheckButton: true,
@@ -218,13 +218,13 @@ export default {
       contErrors: 0,
       contTemps: 0,
       bContador: false,
-      polling: null
+      polling: null,
     };
   },
   methods: {
     funcioMatriu() {
-      this.aInicial.forEach(linea => {
-        linea.forEach(casella => {
+      this.aInicial.forEach((linea) => {
+        linea.forEach((casella) => {
           if (casella.num == 0) casella.num = "";
         });
       });
@@ -265,15 +265,20 @@ export default {
       this.modalOpen ? (this.modalOpen = false) : (this.modalOpen = true);
       this.bCheckButton = false;
       this.bContador = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <template>
-
   <div
-    class="relative overflow-hidden h-screen bg-no-repeat bg-cover animate__animated animate__fadeInDown"
+    class="
+      relative
+      overflow-hidden
+      h-screen
+      bg-no-repeat bg-cover
+      animate__animated animate__fadeInDown
+    "
     style="background-position: 50%"
     :style="{ backgroundImage: 'url(' + require('@/assets/sudoku.jpg') + ')' }"
     v-bind="funcioMatriu()"
@@ -292,51 +297,65 @@ export default {
       "
       style="background-color: rgba(0, 0, 0, 0.75)"
     >
-      <br>
-      <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">Sudokus</h1>
-      <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">Nivell Difícil</h2>
-      <br>
-      <br>
+      <br />
+      <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">
+        Sudokus
+      </h1>
+      <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
+        Nivell Difícil
+      </h2>
+      <br />
+      <br />
       <div class="panel">
-        <div
-          v-for="row in aInicial"
-          :key="row.id"
-        >
-          <div
-            v-for="cell in row"
-            :key="cell.id"
-            class="grid-cell"
-          >
+        <div v-for="row in aInicial" :key="row.id" class="row">
+          <div v-for="cell in row" :key="cell.id" class="grid-cell">
             <div v-if="cell.editable">
               <input
                 type="number"
                 min="0"
                 max="9"
-                class=" border border-solid border-gray-300, cell"
+                class="border border-solid border-gray-300 cell"
                 v-bind:key="cell.id"
                 v-model="cell.num"
               />
             </div>
             <div v-else>
-
               <input
                 type="number"
                 min="0"
                 max="9"
-                class=" border border-solid border-gray-300, cell"
+                class="border border-solid border-neutral-300 cell"
                 v-bind:key="cell.id"
-                :disabled="cell.num ? '' : disabled"
+                disabled
                 v-model="cell.num"
                 readonly
               />
             </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      <br>
+      <br />
       <button
         type="button"
-        class="inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+        class="
+          inline-block
+          px-6
+          py-2.5
+          bg-green-800
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-900 hover:shadow-lg
+          focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-gray-900 active:shadow-lg
+          transition
+          duration-150
+          ease-in-out
+        "
         v-on:click="comprovarMatriu()"
         v-if="bCheckButton"
       >
@@ -353,26 +372,21 @@ export default {
             stroke-linejoin="round"
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
-          </svg>
-          </button>
+        </svg>
+      </button>
 
-          <transition
-            enter-active-class="transition duration-300 ease-out transform"
-            enter-class="scale-95 opacity-0"
-            enter-to-class="scale-100 opacity-100"
-            leave-active-class="transition duration-150 ease-in transform"
-            leave-class="scale-100 opacity-100"
-            leave-to-class="scale-95 opacity-0"
-          >
-            <ResultsComponent
-              v-if="modalOpen"
-              class="result"
-            ></ResultsComponent>
-              </transition>
-              </div>
-
-              </div>
-
+      <transition
+        enter-active-class="transition duration-300 ease-out transform"
+        enter-class="scale-95 opacity-0"
+        enter-to-class="scale-100 opacity-100"
+        leave-active-class="transition duration-150 ease-in transform"
+        leave-class="scale-100 opacity-100"
+        leave-to-class="scale-95 opacity-0"
+      >
+        <ResultsComponent v-if="modalOpen" class="result"></ResultsComponent>
+      </transition>
+    </div>
+  </div>
 </template>
 <style>
 .result {
@@ -398,6 +412,37 @@ export default {
   height: 40px;
   width: 40px;
 }
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+
+td {
+  border: 1px solid;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+.grid-cell:nth-child(3),
+.grid-cell:nth-child(6) {
+  border-right: 2px solid;
+}
+
+.panel div.row:nth-child(3),
+.panel div.row:nth-child(6) {
+  border-bottom: 2px solid;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input[disabled] {
+  background-color: #eeeeee;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
