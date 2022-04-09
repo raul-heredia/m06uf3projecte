@@ -31,33 +31,7 @@
             {{ title }}
           </h1>
           <h3 class="text-3xl font-bold mb-8">Marc Carbonell i Raúl Heredia</h3>
-          <div class="flex justify-center">
-            <input
-              type="text"
-              class="
-                form-control
-                block
-                w-50%
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700
-                focus:bg-white
-                focus:border-green-600
-                focus:outline-none
-              "
-              id="exampleText0"
-              placeholder="Nom Jugador"
-            />
-          </div>
+
           <br />
           <div class="flex">
             <div class="flex-auto">

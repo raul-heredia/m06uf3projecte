@@ -3,10 +3,10 @@ import ResultsComponent from "./ResultsComponent.vue";
 export default {
   name: "NivelFacil",
   props: {
-    title: String,
+    title: String
   },
   components: {
-    ResultsComponent,
+    ResultsComponent
   },
   data: () => {
     return {
@@ -20,7 +20,7 @@ export default {
           { id: "a6", num: 8 },
           { id: "a7", num: 9 },
           { id: "a8", num: 1 },
-          { id: "a9", num: 2 },
+          { id: "a9", num: 2 }
         ],
         [
           { id: "b1", num: 6 },
@@ -31,7 +31,7 @@ export default {
           { id: "b6", num: 5 },
           { id: "b7", num: 3 },
           { id: "b8", num: 4 },
-          { id: "b9", num: 8 },
+          { id: "b9", num: 8 }
         ],
         [
           { id: "c1", num: 1 },
@@ -42,7 +42,7 @@ export default {
           { id: "c6", num: 2 },
           { id: "c7", num: 5 },
           { id: "c8", num: 6 },
-          { id: "c9", num: 7 },
+          { id: "c9", num: 7 }
         ],
         [
           { id: "d1", num: 8 },
@@ -53,7 +53,7 @@ export default {
           { id: "d6", num: 1 },
           { id: "d7", num: 4 },
           { id: "d8", num: 2 },
-          { id: "d9", num: 3 },
+          { id: "d9", num: 3 }
         ],
         [
           { id: "e1", num: 4 },
@@ -64,7 +64,7 @@ export default {
           { id: "e6", num: 3 },
           { id: "e7", num: 7 },
           { id: "e8", num: 9 },
-          { id: "e9", num: 1 },
+          { id: "e9", num: 1 }
         ],
         [
           { id: "f1", num: 7 },
@@ -75,7 +75,7 @@ export default {
           { id: "f6", num: 4 },
           { id: "f7", num: 8 },
           { id: "f8", num: 5 },
-          { id: "f9", num: 6 },
+          { id: "f9", num: 6 }
         ],
         [
           { id: "g1", num: 9 },
@@ -86,7 +86,7 @@ export default {
           { id: "g6", num: 7 },
           { id: "g7", num: 2 },
           { id: "g8", num: 8 },
-          { id: "g9", num: 4 },
+          { id: "g9", num: 4 }
         ],
         [
           { id: "h1", num: 2 },
@@ -97,7 +97,7 @@ export default {
           { id: "h6", num: 9 },
           { id: "h7", num: 6 },
           { id: "h8", num: 3 },
-          { id: "h9", num: 5 },
+          { id: "h9", num: 5 }
         ],
         [
           { id: "i1", num: 3 },
@@ -108,8 +108,8 @@ export default {
           { id: "i6", num: 6 },
           { id: "i7", num: 1 },
           { id: "i8", num: 7 },
-          { id: "i9", num: 9 },
-        ],
+          { id: "i9", num: 9 }
+        ]
       ],
       aInicial: [
         [
@@ -121,7 +121,7 @@ export default {
           { id: "a6", num: 0, editable: true },
           { id: "a7", num: 0, editable: true },
           { id: "a8", num: 0, editable: true },
-          { id: "a9", num: 0, editable: true },
+          { id: "a9", num: 0, editable: true }
         ],
         [
           { id: "b1", num: 6, editable: false },
@@ -132,7 +132,7 @@ export default {
           { id: "b6", num: 5, editable: false },
           { id: "b7", num: 0, editable: true },
           { id: "b8", num: 0, editable: true },
-          { id: "b9", num: 0, editable: true },
+          { id: "b9", num: 0, editable: true }
         ],
         [
           { id: "c1", num: 0, editable: true },
@@ -143,7 +143,7 @@ export default {
           { id: "c6", num: 0, editable: true },
           { id: "c7", num: 0, editable: true },
           { id: "c8", num: 6, editable: false },
-          { id: "c9", num: 0, editable: true },
+          { id: "c9", num: 0, editable: true }
         ],
         [
           { id: "d1", num: 8, editable: false },
@@ -154,7 +154,7 @@ export default {
           { id: "d6", num: 0, editable: true },
           { id: "d7", num: 0, editable: true },
           { id: "d8", num: 0, editable: true },
-          { id: "d9", num: 3, editable: false },
+          { id: "d9", num: 3, editable: false }
         ],
         [
           { id: "e1", num: 4, editable: false },
@@ -165,7 +165,7 @@ export default {
           { id: "e6", num: 3, editable: false },
           { id: "e7", num: 0, editable: true },
           { id: "e8", num: 0, editable: true },
-          { id: "e9", num: 1, editable: false },
+          { id: "e9", num: 1, editable: false }
         ],
         [
           { id: "f1", num: 7, editable: false },
@@ -176,7 +176,7 @@ export default {
           { id: "f6", num: 0, editable: true },
           { id: "f7", num: 0, editable: true },
           { id: "f8", num: 0, editable: true },
-          { id: "f9", num: 6, editable: false },
+          { id: "f9", num: 6, editable: false }
         ],
         [
           { id: "g1", num: 0, editable: true },
@@ -187,7 +187,7 @@ export default {
           { id: "g6", num: 0, editable: true },
           { id: "g7", num: 2, editable: false },
           { id: "g8", num: 8, editable: false },
-          { id: "g9", num: 0, editable: true },
+          { id: "g9", num: 0, editable: true }
         ],
         [
           { id: "h1", num: 0, editable: true },
@@ -198,7 +198,7 @@ export default {
           { id: "h6", num: 9, editable: false },
           { id: "h7", num: 0, editable: true },
           { id: "h8", num: 0, editable: true },
-          { id: "h9", num: 5, editable: false },
+          { id: "h9", num: 5, editable: false }
         ],
         [
           { id: "i1", num: 0, editable: true },
@@ -209,26 +209,26 @@ export default {
           { id: "i6", num: 0, editable: true },
           { id: "i7", num: 0, editable: true },
           { id: "i8", num: 7, editable: false },
-          { id: "i9", num: 9, editable: false },
-        ],
+          { id: "i9", num: 9, editable: false }
+        ]
       ],
+      nomJugador: "",
       modalOpen: false,
       bCheckButton: true,
       contEncerts: 0,
       contErrors: 0,
       contTemps: 0,
-      bContador: false,
-      polling: null,
+      nPuntuacio: 0
     };
   },
   methods: {
     funcioMatriu() {
-      this.aInicial.forEach((linea) => {
-        linea.forEach((casella) => {
+      this.aInicial.forEach(linea => {
+        linea.forEach(casella => {
           if (casella.num == 0) casella.num = "";
         });
       });
-      this.bContador = true;
+      this.tiempo();
     },
     comprovarMatriu() {
       var copiaaInicial = [];
@@ -260,13 +260,32 @@ export default {
           }
         }
       }
-      console.log(this.contEncerts);
-      console.log(this.contErrors);
       this.modalOpen ? (this.modalOpen = false) : (this.modalOpen = true);
       this.bCheckButton = false;
-      this.bContador = false;
+      this.calcularPuntuacio();
     },
-  },
+    tiempo() {
+      clearInterval(this.cronometro);
+      if (this.bCheckButton) {
+        this.cronometro = setInterval(() => {
+          this.contTemps++;
+        }, 1000);
+      }
+    },
+    calcularPuntuacio() {
+      this.nPuntuacio = this.contEncerts * 300;
+      this.nPuntuacio = this.nPuntuacio - this.contErrors * 2;
+      this.nPuntuacio = this.nPuntuacio - this.contTemps;
+      //Guardem dades al local Storage
+      var oJugador = {
+        nEncerts: this.contEncerts,
+        nErrors: this.contErrors,
+        nTemps: this.contTemps,
+        puntuacio: this.nPuntuacio
+      };
+      localStorage.setItem(this.nomJugador, JSON.stringify(oJugador));
+    }
+  }
 };
 </script>
 
@@ -305,10 +324,46 @@ export default {
         Nivell Difícil
       </h2>
       <br />
+      <div class="flex justify-center">
+        <input
+          type="text"
+          class="
+                form-control
+                block
+                w-50%
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700
+                focus:bg-white
+                focus:border-green-600
+                focus:outline-none
+              "
+          v-model="nomJugador"
+          placeholder="Nom Jugador"
+        />
+      </div>
       <br />
+
       <div class="panel">
-        <div v-for="row in aInicial" :key="row.id" class="row">
-          <div v-for="cell in row" :key="cell.id" class="grid-cell">
+        <div
+          v-for="row in aInicial"
+          :key="row.id"
+          class="row"
+        >
+          <div
+            v-for="cell in row"
+            :key="cell.id"
+            class="grid-cell"
+          >
             <div v-if="cell.editable">
               <input
                 type="number"
@@ -331,8 +386,8 @@ export default {
                 readonly
               />
             </div>
-          </div>
-        </div>
+      </div>
+      </div>
       </div>
       <br />
       <button
@@ -372,21 +427,24 @@ export default {
             stroke-linejoin="round"
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
-        </svg>
-      </button>
+          </svg>
+          </button>
 
-      <transition
-        enter-active-class="transition duration-300 ease-out transform"
-        enter-class="scale-95 opacity-0"
-        enter-to-class="scale-100 opacity-100"
-        leave-active-class="transition duration-150 ease-in transform"
-        leave-class="scale-100 opacity-100"
-        leave-to-class="scale-95 opacity-0"
-      >
-        <ResultsComponent v-if="modalOpen" class="result"></ResultsComponent>
-      </transition>
-    </div>
-  </div>
+          <transition
+            enter-active-class="transition duration-300 ease-out transform"
+            enter-class="scale-95 opacity-0"
+            enter-to-class="scale-100 opacity-100"
+            leave-active-class="transition duration-150 ease-in transform"
+            leave-class="scale-100 opacity-100"
+            leave-to-class="scale-95 opacity-0"
+          >
+            <ResultsComponent
+              v-if="modalOpen"
+              class="result"
+            ></ResultsComponent>
+              </transition>
+              </div>
+              </div>
 </template>
 <style>
 .result {
