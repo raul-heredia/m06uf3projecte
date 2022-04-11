@@ -1,7 +1,7 @@
 <script>
 import ResultsComponent from "./ResultsComponent.vue";
 export default {
-  name: "NivelFacil",
+  name: "NivelNormal",
   props: {
     title: String
   },
@@ -10,8 +10,8 @@ export default {
   },
   data: () => {
     return {
-      aSolucion: JSON.parse(localStorage.getItem("Matriu nFacil Solucion")),
-      aUsuari: JSON.parse(localStorage.getItem("Matriu nFacil")),
+      aSolucion: JSON.parse(localStorage.getItem("Matriu nNormal Solucion")),
+      aUsuari: JSON.parse(localStorage.getItem("Matriu nNormal")),
       nomJugador: "",
       modalOpen: false,
       bCheckButton: true,
@@ -68,7 +68,7 @@ export default {
       }
     },
     calcularPuntuacio() {
-      this.nPuntuacio = this.contEncerts * 100;
+      this.nPuntuacio = this.contEncerts * 150;
       this.nPuntuacio = this.nPuntuacio - this.contErrors * 2;
       this.nPuntuacio = this.nPuntuacio - this.contTemps;
       //Guardem dades al local Storage
@@ -114,7 +114,7 @@ export default {
                 Sudokus
             </h1>
             <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
-                Nivell Facil
+                Nivell Normal
             </h2>
             <br />
             <div class="flex justify-center">

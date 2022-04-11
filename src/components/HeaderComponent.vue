@@ -106,9 +106,13 @@
                   </a>
             </div>
             <div class="flex-auto">
-              <button
-                type="button"
-                class="
+              <a
+                href="#/normal"
+                v-on:click="this.$parent.navegar"
+              >
+                <button
+                  type="button"
+                  class="
                   inline-block
                   px-6
                   py-2.5
@@ -128,15 +132,16 @@
                   h-10
                   animate__animated animate__fadeInDown
                 "
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                Normal
-                </button>
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  Normal
+                  </button>
+                  </a>
             </div>
             <div class="flex-auto">
               <a
-                href="#/contacte"
+                href="#/dificil"
                 v-on:click="this.$parent.navegar"
               >
                 <button
