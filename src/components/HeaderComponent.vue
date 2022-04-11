@@ -18,6 +18,7 @@
         bg-fixed
       "
       style="background-color: rgba(0, 0, 0, 0.75)"
+      v-bind="taula()"
     >
       <div class="flex justify-center items-center h-full">
         <div class="text-center text-white px-6 md:px-12">
@@ -31,7 +32,26 @@
             {{ title }}
           </h1>
           <h3 class="text-3xl font-bold mb-8">Marc Carbonell i Raúl Heredia</h3>
-
+          <div class="flex space-x-2 justify-center">
+            <button
+              type="button"
+              class="inline-block px-6 py-2 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              @click="mostrarModal = !mostrarModal"
+              style="color: white"
+            >
+              Puntuacions
+              </button>
+              <transition
+                enter-active-class="transition duration-300 ease-out transform"
+                enter-class="scale-95 opacity-0"
+                enter-to-class="scale-100 opacity-100"
+                leave-active-class="transition duration-150 ease-in transform"
+                leave-class="scale-100 opacity-100"
+                leave-to-class="scale-100 opacity-0"
+              >
+                <TableComponent v-if="mostrarModal"></TableComponent>
+                </transition>
+          </div>
           <br />
           <div class="flex">
             <div class="flex-auto">
@@ -134,6 +154,7 @@
             </div>
           </div>
         </div>
+
       </div>
       </div>
       </div>
@@ -141,10 +162,32 @@
 </template>
 
 <script>
+import TableComponent from "./TableComponent.vue";
+
 export default {
   name: "SudokuGame",
   props: {
     title: String
+  },
+  components: {
+    TableComponent
+  },
+  data: () => {
+    return {
+      aPuntuacions: [],
+      mostrarModal: false
+    };
+  },
+  methods: {
+    taula() {
+      var array = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.getItem(localStorage.key(i));
+        var obj = JSON.parse(key);
+        array.push(obj);
+      }
+      this.aPuntuacions = array;
+    }
   }
 };
 </script>

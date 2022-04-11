@@ -278,9 +278,7 @@ export default {
       this.nPuntuacio = this.nPuntuacio - this.contTemps;
       //Guardem dades al local Storage
       var oJugador = {
-        nEncerts: this.contEncerts,
-        nErrors: this.contErrors,
-        nTemps: this.contTemps,
+        sJugador: this.nomJugador,
         puntuacio: this.nPuntuacio
       };
       localStorage.setItem(this.nomJugador, JSON.stringify(oJugador));
