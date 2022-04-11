@@ -212,7 +212,7 @@ export default {
           { id: "i9", num: 9, editable: false }
         ]
       ],
-      aProva: [],
+      aProva: JSON.parse(localStorage.getItem("Matriu nDificil")),
       nomJugador: "",
       modalOpen: false,
       bCheckButton: true,
@@ -225,7 +225,6 @@ export default {
   methods: {
     funcioMatriu() {
       localStorage.setItem("Matriu nDificil", JSON.stringify(this.aInicial));
-      this.aProva = JSON.parse(localStorage.getItem("Matriu nDificil"));
       this.tiempo();
     },
     comprovarMatriu() {
