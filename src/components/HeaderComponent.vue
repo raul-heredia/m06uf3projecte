@@ -32,20 +32,38 @@
             {{ title }}
           </h1>
           <h3 class="text-3xl font-bold mb-8">Marc Carbonell i Raúl Heredia</h3>
-          <div class="flex space-x-2 justify-center">
+          <div class="flex-auto">
             <button
               type="button"
-              class="inline-block px-6 py-2 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              class="
+                  inline-block
+                  px-6
+                  py-2
+                  border-2 border-purple-500
+                  text-white-500
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  hover:bg-black hover:bg-opacity-5
+                  focus:outline-none focus:ring-0
+                  transition
+                  duration-150
+                  ease-in-out
+                  w-30
+                  h-10
+                  animate__animated animate__fadeInDown
+                "
               @click="mostrarModal = !mostrarModal"
-              style="color: white"
             >
               Puntuacions
               </button>
               <transition
-                enter-active-class="transition duration-300 ease-out transform"
+                enter-active-class="transition duration-100 ease-out transform animate__animated animate__slideInDown"
                 enter-class="scale-95 opacity-0"
                 enter-to-class="scale-100 opacity-100"
-                leave-active-class="transition duration-150 ease-in transform"
+                leave-active-class="transition duration-150 ease-in transform animate__animated animate__slideOutDown"
                 leave-class="scale-100 opacity-100"
                 leave-to-class="scale-100 opacity-0"
               >
@@ -184,7 +202,7 @@ export default {
       for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.getItem(localStorage.key(i));
         var obj = JSON.parse(key);
-        array.push(obj);
+        if (obj.sJugador) array.push(obj);
       }
       this.aPuntuacions = array;
     }

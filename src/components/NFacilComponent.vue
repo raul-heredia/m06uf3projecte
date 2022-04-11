@@ -115,103 +115,104 @@ export default {
         [
           { id: "a1", num: 5, editable: false },
           { id: "a2", num: 3, editable: false },
-          { id: "a3", num: 0, editable: true },
-          { id: "a4", num: 0, editable: true },
+          { id: "a3", num: "", editable: true },
+          { id: "a4", num: "", editable: true },
           { id: "a5", num: 7, editable: false },
-          { id: "a6", num: 0, editable: true },
-          { id: "a7", num: 0, editable: true },
-          { id: "a8", num: 0, editable: true },
-          { id: "a9", num: 0, editable: true }
+          { id: "a6", num: "", editable: true },
+          { id: "a7", num: "", editable: true },
+          { id: "a8", num: "", editable: true },
+          { id: "a9", num: "", editable: true }
         ],
         [
           { id: "b1", num: 6, editable: false },
-          { id: "b2", num: 0, editable: true },
-          { id: "b3", num: 0, editable: true },
+          { id: "b2", num: "", editable: true },
+          { id: "b3", num: "", editable: true },
           { id: "b4", num: 1, editable: false },
           { id: "b5", num: 9, editable: false },
           { id: "b6", num: 5, editable: false },
-          { id: "b7", num: 0, editable: true },
-          { id: "b8", num: 0, editable: true },
-          { id: "b9", num: 0, editable: true }
+          { id: "b7", num: "", editable: true },
+          { id: "b8", num: "", editable: true },
+          { id: "b9", num: "", editable: true }
         ],
         [
-          { id: "c1", num: 0, editable: true },
+          { id: "c1", num: "", editable: true },
           { id: "c2", num: 9, editable: false },
           { id: "c3", num: 8, editable: false },
-          { id: "c4", num: 0, editable: true },
-          { id: "c5", num: 0, editable: true },
-          { id: "c6", num: 0, editable: true },
-          { id: "c7", num: 0, editable: true },
+          { id: "c4", num: "", editable: true },
+          { id: "c5", num: "", editable: true },
+          { id: "c6", num: "", editable: true },
+          { id: "c7", num: "", editable: true },
           { id: "c8", num: 6, editable: false },
-          { id: "c9", num: 0, editable: true }
+          { id: "c9", num: "", editable: true }
         ],
         [
           { id: "d1", num: 8, editable: false },
-          { id: "d2", num: 0, editable: true },
-          { id: "d3", num: 0, editable: true },
-          { id: "d4", num: 0, editable: true },
+          { id: "d2", num: "", editable: true },
+          { id: "d3", num: "", editable: true },
+          { id: "d4", num: "", editable: true },
           { id: "d5", num: 6, editable: false },
-          { id: "d6", num: 0, editable: true },
-          { id: "d7", num: 0, editable: true },
-          { id: "d8", num: 0, editable: true },
+          { id: "d6", num: "", editable: true },
+          { id: "d7", num: "", editable: true },
+          { id: "d8", num: "", editable: true },
           { id: "d9", num: 3, editable: false }
         ],
         [
           { id: "e1", num: 4, editable: false },
-          { id: "e2", num: 0, editable: true },
-          { id: "e3", num: 0, editable: true },
+          { id: "e2", num: "", editable: true },
+          { id: "e3", num: "", editable: true },
           { id: "e4", num: 8, editable: false },
-          { id: "e5", num: 0, editable: true },
+          { id: "e5", num: "", editable: true },
           { id: "e6", num: 3, editable: false },
-          { id: "e7", num: 0, editable: true },
-          { id: "e8", num: 0, editable: true },
+          { id: "e7", num: "", editable: true },
+          { id: "e8", num: "", editable: true },
           { id: "e9", num: 1, editable: false }
         ],
         [
           { id: "f1", num: 7, editable: false },
-          { id: "f2", num: 0, editable: true },
-          { id: "f3", num: 0, editable: true },
-          { id: "f4", num: 0, editable: true },
+          { id: "f2", num: "", editable: true },
+          { id: "f3", num: "", editable: true },
+          { id: "f4", num: "", editable: true },
           { id: "f5", num: 2, editable: false },
-          { id: "f6", num: 0, editable: true },
-          { id: "f7", num: 0, editable: true },
-          { id: "f8", num: 0, editable: true },
+          { id: "f6", num: "", editable: true },
+          { id: "f7", num: "", editable: true },
+          { id: "f8", num: "", editable: true },
           { id: "f9", num: 6, editable: false }
         ],
         [
-          { id: "g1", num: 0, editable: true },
+          { id: "g1", num: "", editable: true },
           { id: "g2", num: 6, editable: false },
-          { id: "g3", num: 0, editable: true },
-          { id: "g4", num: 0, editable: true },
-          { id: "g5", num: 0, editable: true },
-          { id: "g6", num: 0, editable: true },
+          { id: "g3", num: "", editable: true },
+          { id: "g4", num: "", editable: true },
+          { id: "g5", num: "", editable: true },
+          { id: "g6", num: "", editable: true },
           { id: "g7", num: 2, editable: false },
           { id: "g8", num: 8, editable: false },
-          { id: "g9", num: 0, editable: true }
+          { id: "g9", num: "", editable: true }
         ],
         [
-          { id: "h1", num: 0, editable: true },
-          { id: "h2", num: 0, editable: true },
-          { id: "h3", num: 0, editable: true },
+          { id: "h1", num: "", editable: true },
+          { id: "h2", num: "", editable: true },
+          { id: "h3", num: "", editable: true },
           { id: "h4", num: 4, editable: false },
           { id: "h5", num: 1, editable: false },
           { id: "h6", num: 9, editable: false },
-          { id: "h7", num: 0, editable: true },
-          { id: "h8", num: 0, editable: true },
+          { id: "h7", num: "", editable: true },
+          { id: "h8", num: "", editable: true },
           { id: "h9", num: 5, editable: false }
         ],
         [
-          { id: "i1", num: 0, editable: true },
-          { id: "i2", num: 0, editable: true },
-          { id: "i3", num: 0, editable: true },
-          { id: "i4", num: 0, editable: true },
+          { id: "i1", num: "", editable: true },
+          { id: "i2", num: "", editable: true },
+          { id: "i3", num: "", editable: true },
+          { id: "i4", num: "", editable: true },
           { id: "i5", num: 8, editable: false },
-          { id: "i6", num: 0, editable: true },
-          { id: "i7", num: 0, editable: true },
+          { id: "i6", num: "", editable: true },
+          { id: "i7", num: "", editable: true },
           { id: "i8", num: 7, editable: false },
           { id: "i9", num: 9, editable: false }
         ]
       ],
+      aProva: [],
       nomJugador: "",
       modalOpen: false,
       bCheckButton: true,
@@ -223,11 +224,8 @@ export default {
   },
   methods: {
     funcioMatriu() {
-      this.aInicial.forEach(linea => {
-        linea.forEach(casella => {
-          if (casella.num == 0) casella.num = "";
-        });
-      });
+      localStorage.setItem("Matriu nDificil", JSON.stringify(this.aInicial));
+      this.aProva = JSON.parse(localStorage.getItem("Matriu nDificil"));
       this.tiempo();
     },
     comprovarMatriu() {
@@ -353,7 +351,7 @@ export default {
 
       <div class="panel">
         <div
-          v-for="row in aInicial"
+          v-for="row in aProva"
           :key="row.id"
           class="row"
         >
