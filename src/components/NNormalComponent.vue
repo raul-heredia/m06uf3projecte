@@ -83,20 +83,20 @@ export default {
 </script>
 
 <template>
-    <div
-        class="
+  <div
+    class="
       relative
       overflow-hidden
       h-screen
       bg-no-repeat bg-cover
       animate__animated animate__fadeInDown
     "
-        style="background-position: 50%"
-        :style="{ backgroundImage: 'url(' + require('@/assets/sudoku.jpg') + ')' }"
-        v-bind="funcioMatriu()"
-    >
-        <div
-            class="
+    style="background-position: 50%"
+    :style="{ backgroundImage: 'url(' + require('@/assets/sudoku.jpg') + ')' }"
+    v-bind="funcioMatriu()"
+  >
+    <div
+      class="
         absolute
         top-0
         right-0
@@ -107,20 +107,23 @@ export default {
         overflow-hidden
         bg-fixed
       "
-            style="background-color: rgba(0, 0, 0, 0.75)"
-        >
-            <br />
-            <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">
-                Sudokus
-            </h1>
-            <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
-                Nivell Normal
-            </h2>
-            <br />
-            <div class="flex justify-center">
-                <input
-                    type="text"
-                    class="
+      style="background-color: rgba(0, 0, 0, 0.75)"
+    >
+      <br />
+      <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">
+        Sudokus
+      </h1>
+      <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
+        Nivell Normal
+      </h2>
+      <h4 class="font-medium leading-tight text-4xl mt-0 mb-2 text-green-600">
+        Temps: {{contTemps}}
+      </h4>
+      <br />
+      <div class="flex justify-center">
+        <input
+          type="text"
+          class="
                 form-control
                 block
                 w-50%
@@ -140,52 +143,52 @@ export default {
                 focus:border-green-600
                 focus:outline-none
               "
-                    v-model="nomJugador"
-                    placeholder="Nom Jugador"
-                />
-            </div>
-            <br />
+          v-model="nomJugador"
+          placeholder="Nom Jugador"
+        />
+      </div>
+      <br />
 
-            <div class="panel">
-                <div
-                    v-for="row in aUsuari"
-                    :key="row.id"
-                    class="row"
-                >
-                    <div
-                        v-for="cell in row"
-                        :key="cell.id"
-                        class="grid-cell"
-                    >
-                        <div v-if="cell.editable">
-                            <input
-                                type="number"
-                                min="0"
-                                max="9"
-                                class="border border-solid border-gray-300 cell"
-                                v-bind:key="cell.id"
-                                v-model="cell.num"
-                            />
-                        </div>
-                        <div v-else>
-                            <input
-                                type="number"
-                                min="0"
-                                max="9"
-                                class="border border-solid border-neutral-300 cell"
-                                v-bind:key="cell.id"
-                                disabled
-                                v-model="cell.num"
-                                readonly
-                            />
-                        </div>
+      <div class="panel">
+        <div
+          v-for="row in aUsuari"
+          :key="row.id"
+          class="row"
+        >
+          <div
+            v-for="cell in row"
+            :key="cell.id"
+            class="grid-cell"
+          >
+            <div v-if="cell.editable">
+              <input
+                type="number"
+                min="0"
+                max="9"
+                class="border border-solid border-gray-300 cell"
+                v-bind:key="cell.id"
+                v-model="cell.num"
+              />
             </div>
+            <div v-else>
+              <input
+                type="number"
+                min="0"
+                max="9"
+                class="border border-solid border-neutral-300 cell"
+                v-bind:key="cell.id"
+                disabled
+                v-model="cell.num"
+                readonly
+              />
             </div>
-            </div>
-            <br />
-            <button
-                type="button"
-                class="
+      </div>
+      </div>
+      </div>
+      <br />
+      <button
+        type="button"
+        class="
           inline-block
           px-6
           py-2.5
@@ -204,40 +207,40 @@ export default {
           duration-150
           ease-in-out
         "
-                v-on:click="comprovarMatriu()"
-                v-if="bCheckButton"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                    </svg>
-                    </button>
+        v-on:click="comprovarMatriu()"
+        v-if="bCheckButton"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+          </svg>
+          </button>
 
-                    <transition
-                        enter-active-class="transition duration-300 ease-out transform"
-                        enter-class="scale-95 opacity-0"
-                        enter-to-class="scale-100 opacity-100"
-                        leave-active-class="transition duration-150 ease-in transform"
-                        leave-class="scale-100 opacity-100"
-                        leave-to-class="scale-95 opacity-0"
-                    >
-                        <ResultsComponent
-                            v-if="modalOpen"
-                            class="result"
-                        ></ResultsComponent>
-                            </transition>
-                            </div>
-                            </div>
+          <transition
+            enter-active-class="transition duration-300 ease-out transform"
+            enter-class="scale-95 opacity-0"
+            enter-to-class="scale-100 opacity-100"
+            leave-active-class="transition duration-150 ease-in transform"
+            leave-class="scale-100 opacity-100"
+            leave-to-class="scale-95 opacity-0"
+          >
+            <ResultsComponent
+              v-if="modalOpen"
+              class="result"
+            ></ResultsComponent>
+              </transition>
+              </div>
+              </div>
 </template>
 <style>
 .result {

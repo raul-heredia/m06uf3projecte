@@ -116,6 +116,9 @@ export default {
       <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
         Nivell Difícil
       </h2>
+      <h3 class="font-medium leading-tight text-4xl mt-0 mb-2 text-green-600">
+        Temps: {{contTemps}}
+      </h3>
       <br />
       <div class="flex justify-center">
         <input
