@@ -208,6 +208,7 @@ export default {
         var key = localStorage.getItem(localStorage.key(i));
         var obj = JSON.parse(key);
         if (obj.sJugador) array.push(obj);
+        array = array.sort(function(a, b){return b.puntuacio-a.puntuacio});
       }
       this.aPuntuacions = array;
     }

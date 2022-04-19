@@ -7,7 +7,7 @@
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import TestComponent from "./components/TestComponent.vue";
-import NoTrobat from "./components/NoTrobat.vue";
+//import NoTrobat from "./components/NoTrobat.vue";
 import NFacilComponent from "./components/NFacilComponent.vue";
 import NDificilComponent from "./components/NDificilComponent.vue";
 import NNormalComponent from "./components/NNormalComponent.vue";
@@ -664,7 +664,7 @@ export default {
   },
   computed: {
     vistaActual: function() {
-      return this.rutes[this.rutaActual] || NoTrobat;
+      return this.rutes[this.rutaActual] || HeaderComponent;
     }
   },
   //Esta funcion hace que cuando se canvia el #/ de la ruta, se ponga la vista que queremos
